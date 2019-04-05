@@ -102,11 +102,12 @@ class Person
       new_points = 0 
     elsif current_points > 10 
       new_points = 10 
-    end 
-  end 
+  else 
   current_points = new_points 
 end 
-  
+end 
+new_points
+end 
   
   
   
