@@ -96,7 +96,7 @@ class Person
     @hygiene = 8
   end 
   
-  def self.happiness(current_points)
+  def happiness=(current_points)
     new_points = 0 
     if current_points < 0 
       new_points = 0 
