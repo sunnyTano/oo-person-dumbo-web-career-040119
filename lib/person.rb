@@ -86,7 +86,7 @@
 
 class Person 
   
-  attr_reader :name, :happiness, :hygiene
+  attr_reader :name, :happiness,:hygiene
   attr_accessor :bank_account
   
   def initialize(name)
@@ -120,7 +120,13 @@ end
 @hygiene = new_points 
 end
   
+  def clean? 
+    @happiness > 7 
+  end 
   
+  def happy? 
+    @hygiene > 7 
+  end
   
   
 end 
