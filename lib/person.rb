@@ -108,6 +108,17 @@ end
 @happiness = new_points 
 end
   
+    def hygiene=(current_points)
+    new_points = 0 
+    if current_points < 0 
+      new_points = 0 
+    elsif current_points > 10 
+      new_points = 10 
+  else 
+  current_points = new_points 
+end 
+@hygiene = new_points 
+end
   
   
   
