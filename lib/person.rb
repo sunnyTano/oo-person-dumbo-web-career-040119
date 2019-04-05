@@ -26,7 +26,7 @@ def happiness=(current)
   @happiness = new
 end
 
-def happiness=(current)
+def hygiene=(current)
   new = 0
   if current > 10
     new = 10
@@ -35,9 +35,9 @@ def happiness=(current)
   else
     new = current
   end
-  @happiness = new
+  @hygiene = new
 end
-# binding.pry
+
 
 def clean?
   @hygiene > 7
