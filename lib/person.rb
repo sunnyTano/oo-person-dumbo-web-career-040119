@@ -121,11 +121,11 @@ end
 end
   
   def clean? 
-    @happiness > 7 
+    @hygiene > 7 
   end 
   
   def happy? 
-    @hygiene > 7 
+    @happiness > 7 
   end
   
   
