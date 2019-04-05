@@ -13,30 +13,29 @@ attr_accessor :bank_account
     @hygiene = 8
   end 
   
-def happiness=(current)
-  new = 0
-  if current < 0
-    new = 0
+def happiness=(current_points)
+  new_points = 0
+  if current_points < 0
+    new_points = 0
   elsif current > 10
-    new = 10
+    new_points = 10
   else
-    new = current
+    new_points = current_points
   end
-  @happiness = new
+  @happiness = new_points
 end
 
-def hygiene=(current)
-  new = 0
-  if current < 0
+def hygiene=(current_points)
+  new_points = 0
+  if current_points < 0
     new = 0
-  elsif current > 10
-    new = 10
+  elsif current_points > 10
+    new_points = 10
   else
-    new = current
+    new_points = current_points
   end
-  @hygiene = new
+  @hygiene = new_points
 end
-
 
 def clean?
   @hygiene > 7
