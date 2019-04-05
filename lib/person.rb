@@ -105,10 +105,7 @@ class Person
   else 
   current_points = new_points 
 end 
-end 
-new_points
-end 
-  
+
   
   
   
