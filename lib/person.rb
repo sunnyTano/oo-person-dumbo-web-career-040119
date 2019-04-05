@@ -13,13 +13,12 @@ attr_accessor :bank_account
     @hygiene = 8
   end 
   
-
 def happiness=(current)
   new = 0
-  if current > 10
-    new = 10
-  elsif current < 0
+  if current < 0
     new = 0
+  elsif current > 10
+    new = 10
   else
     new = current
   end
