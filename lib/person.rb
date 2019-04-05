@@ -105,7 +105,8 @@ class Person
   else 
   current_points = new_points 
 end 
-
+@happiness = new_points 
+end
   
   
   
