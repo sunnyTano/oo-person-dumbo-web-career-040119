@@ -2,6 +2,10 @@
 require 'pry'
 
 class Person
+  
+attr_reader :name, :happiness,:hygiene
+attr_accessor :bank_account
+
   def initialize(name)
     @name = name
     @bank_account = 25
@@ -9,32 +13,29 @@ class Person
     @hygiene = 8
   end 
   
-attr_reader :name, :happiness,:hygiene
-attr_accessor :bank_account
 
-def happiness=(num)
-  new_num = 0
-  if num > 10
-    new_num = 10
-  elsif num < 0
-    new_num = 0
+def happiness=(current)
+  new = 0
+  if current > 10
+    new = 10
+  elsif current < 0
+    new = 0
   else
-    new_num = num
+    new = current
   end
-  @happiness = new_num
+  @happiness = new
 end
 
-def hygiene=(num)
-  new_num = 0
-  if num > 10
-    new_num = 10
-  elsif num < 0
-    new_num = 0
+def happiness=(current)
+  new = 0
+  if current > 10
+    new = 10
+  elsif current < 0
+    new = 0
   else
-    new_num = num
+    new = current
   end
-
-  @hygiene = new_num
+  @happiness = new
 end
 # binding.pry
 
