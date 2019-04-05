@@ -83,3 +83,34 @@
 # end 
 # end
 # end
+
+class Person 
+  
+  attr_reader :name
+  attr_accessor :happiness, :hygiene, :bank_account
+  
+  def initialize(name)
+    @name = name
+    @bank_account = 25 
+    @happiness = 8  
+    @hygiene = 8
+  end 
+  
+  def self.happiness(current_points)
+    new_points = 0 
+    if current_points < 0 
+      new_points = 0 
+    elsif current_points > 10 
+      new_points = 10 
+    end 
+  end 
+  current_points = new_points 
+end 
+  
+  
+  
+  
+  
+  
+  
+end 
