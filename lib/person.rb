@@ -17,7 +17,7 @@ def happiness=(current_points)
   new_points = 0
   if current_points < 0
     new_points = 0
-  elsif current > 10
+  elsif current_points > 10
     new_points = 10
   else
     new_points = current_points
@@ -28,7 +28,7 @@ end
 def hygiene=(current_points)
   new_points = 0
   if current_points < 0
-    new = 0
+    new_points = 0
   elsif current_points > 10
     new_points = 10
   else
